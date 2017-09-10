@@ -16,6 +16,14 @@
     </div>
     <div id="author">
       <p>{{ .Site.Author.name }}</p>
+      <p>
+        <a href="/about/about/">About</a><br />
+      </p>
+      {{ with .Site.Author.email }}
+      <p>
+        <a href="mailto:{{ . }}">{{ . }}</a>
+      </p>
+      {{ end }}
       <div>
         <p>
           {{ with .Site.Author.twitter }}
@@ -27,18 +35,12 @@
           {{ with .Site.Author.linkedin }}
           <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
           {{ end }}
+          {{ with .Site.Author.facebook }}
+          <a href="https://www.facebook.com/{{ . }}"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          {{ end }}
           {{ with .Site.Author.tumblr }}
           <a href="https://{{ . }}.tumblr.com/"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
           {{ end }}
-        </p>
-        {{ with .Site.Author.email }}
-        <p>
-          Contact:<br />
-          <a href="mailto:{{ . }}">{{ . }}</a>
-        </p>
-        {{ end }}
-        <p>
-          <a href="/about/about/">About</a><br />
         </p>
       </div>
     </div>
