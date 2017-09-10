@@ -1,0 +1,24 @@
+baseURL = "http://robertfpickering.me/"
+theme = "hugo-theme-robert"
+languageCode = "en-gb"
+title = "Robert Pickering"
+
+[author]
+    name = "Robert Pickering"
+    homepage = "http://robertfpickering.me/"
+    twitter  = "robertpi"
+    linkedin = "robertpickering"
+    github   = "robertpi"
+    email    = "contact@robertfpickering.me"
+
+[params]
+    [params.sharebutton]
+        # If you want to display share buttons set these
+        # This is Optional values
+        twitter  = true
+        facebook = true
+        tumblr   = true
+        google   = true
+        pocket   = false
+        # Please set id when you want to display facebook
+        facebookAppId = "1772081226418376"
