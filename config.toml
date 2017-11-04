@@ -1,15 +1,17 @@
-baseURL = "http://robertfpickering.me/"
+baseURL = "http://www.robertfpickering.me"
 theme = "hugo-theme-robert"
 languageCode = "en-gb"
 title = "Robert Pickering"
 
 [author]
     name = "Robert Pickering"
-    homepage = "http://robertfpickering.me/"
+    homepage = "http://www.robertfpickering.me"
+    about    = "http://www.robertfpickering.me/about"
     twitter  = "robertpi"
     linkedin = "robertpickering"
     github   = "robertpi"
     facebook = "robertfpickering"
+    gplus    = "https://plus.google.com/u/0/105208486452690739265"
     email    = "contact@robertfpickering.me"
 
 [params]
