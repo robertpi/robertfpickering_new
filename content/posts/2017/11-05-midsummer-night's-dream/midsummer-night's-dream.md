@@ -13,6 +13,8 @@ image = "/posts/2017/11-05-midsummer-night's-dream/Mid-summer-night's-dream-0940
 
 * ![Midsummer Night's Dream](/posts/2017/11-05-midsummer-night's-dream/Mid-summer-night's-dream-0940.jpg)
 
+<!--more-->
+
 * ![Midsummer Night's Dream](/posts/2017/11-05-midsummer-night's-dream/Mid-summer-night's-dream-0920.jpg)
 
 * ![Midsummer Night's Dream](/posts/2017/11-05-midsummer-night's-dream/Mid-summer-night's-dream-0949.jpg)
