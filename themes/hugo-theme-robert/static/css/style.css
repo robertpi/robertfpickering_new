@@ -12,7 +12,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  color:#777;
+  color:#666;
   background-color:#000;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .falseheader {
-  color:#222;
+  color:#666;
   margin:0 0 20px;
 }
 
@@ -107,7 +107,7 @@ li {
 
 .article .content {
   clear: left;
-  color: #303030;
+  color: #777;
   margin-bottom: 10px;
 }
 
