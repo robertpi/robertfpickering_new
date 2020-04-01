@@ -6,7 +6,7 @@ categories = [ "photography" ]
 tags = [
     "old-masters"
 ]
-image = ""
+image = "/posts/2020/31-03-old-masters-Albert-Renger-Patzsch/old-masters-Albert-Renger-Patzsch-1.jpg"
 +++
 I decided to try and create my interpretation of some of the photographers that I admire. Here's some reinterpretation of Albert Renger Patzsch.
 
