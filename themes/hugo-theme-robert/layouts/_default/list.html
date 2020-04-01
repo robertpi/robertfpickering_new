@@ -1,10 +1,20 @@
 {{ partial "header.html" . }}
 <div id="article-list">
-  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-  {{ range $paginator.Pages }}
+  {{range (where .Paginator.Pages  "Type" "post") }}
   <div class="article">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p>{{ .Summary }}</p>
+    {{ with first 1 (.Resources.ByType "image") }}
+    <div class="Gallery">
+      {{ range . }}
+        <div class='Gallery__item'>
+          <img src="{{ .RelPermalink }}" alt="{{ .Exif.Tags.ImageDescription }}" />
+        </div>
+        <p>{{ .Exif.Tags.ImageDescription }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+
     <div class="article-meta">
       <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
       {{ partial "tags.html" . }}
