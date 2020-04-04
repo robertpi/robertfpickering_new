@@ -6,7 +6,7 @@ categories = [ "photography" ]
 tags = [
     "old-masters"
 ]
-image = "/posts/2020/04-04-old-masters-irving-penn/old-master-joel-meyeowitz-1.jpg"
+image = "/posts/2020/04-04-old-masters-irving-penn/self-portrait-picasso-penn-5368.jpg"
 +++
 
 An attempt to copy Irving Penn's famous portrait of Pablo Picasso.
