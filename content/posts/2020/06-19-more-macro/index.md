@@ -6,7 +6,7 @@ categories = [ "photography" ]
 tags = [
     "macro"
 ]
-image = "/posts/2020/06-19-macro/marco-5785.jpg"
+image = "/posts/2020/06-19-more-macro/marco-5785.jpg"
 +++
 
 Photos fresh from the early evening. The long grass is teaming with life. Biology in action.
