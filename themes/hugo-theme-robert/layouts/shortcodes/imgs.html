@@ -1,4 +1,4 @@
-{{ with $.Page.Resources.ByType "image"}}
+{{ with $.Page.Resources.Match "*.jpg"}}
 <div class="Gallery">
 	{{ range . }}
 		<div class='Gallery__item'>
