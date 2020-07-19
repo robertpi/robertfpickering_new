@@ -12,17 +12,16 @@ title = "Robert Pickering"
     github   = "robertpi"
     facebook = "robertfpickering"
     instagram = "robertfpickering"
-    gplus    = "https://plus.google.com/u/0/105208486452690739265"
     email    = "contact@robertfpickering.me"
 
 [params]
     [params.sharebutton]
         # If you want to display share buttons set these
         # This is Optional values
-        twitter  = true
-        facebook = true
-        tumblr   = true
-        google   = true
+        twitter  = false
+        facebook = false
+        tumblr   = false
+        google   = false
         pocket   = false
         # Please set id when you want to display facebook
         facebookAppId = "1772081226418376"
