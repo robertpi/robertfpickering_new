@@ -5,7 +5,7 @@ Title = "Bees"
 Date = "2017-09-24"
 categories = [ "photography" ]
 tags = [
-    "bee",
+    "bees",
     "macro"
 ]
 image = "/posts/2017/09-24-bees/pond-0383.jpg"

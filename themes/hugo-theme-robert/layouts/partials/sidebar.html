@@ -49,16 +49,16 @@
     </div>
   </div>
   {{ end }}
-  {{ with .Site.Taxonomies.categories }}
+  {{ with .Site.Taxonomies.tags }}
   <div class="sidebar-content">
     <div class="sidebar-header">
       <span>Categories</span>
     </div>
     <div class="categories">
       <ul>
-        {{ range $category, $taxonomy := . }}
+        {{ range $tag, $taxonomy := . }}
         <li>
-          <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
+          <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}"><span></span>{{ $tag }} ({{ $taxonomy.Count }})</a>
         </li>
         {{ end }}
       </ul>
@@ -70,7 +70,7 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ or .RSSLink .Site.RSSLink }}" type="application/rss+xml" target="_blank">
+      <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" type="application/rss+xml" target="_blank">
         <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
       </a>
     </div>
