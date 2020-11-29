@@ -1,6 +1,6 @@
 ﻿+++
 Type = "post"
-Title = "Search of Imperfection: Film Photography"
+Title = "In Search of Imperfection: Film Photography"
 Date = "2020-11-28T09:04:10.0766574+02:00"
 categories = [ "photography" ]
 tags = [
