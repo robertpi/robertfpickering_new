@@ -2,9 +2,16 @@
 <div class="Gallery">
 	{{ range . }}
 		<div class='Gallery__item'>
-			<img src="{{ .RelPermalink }}" alt="{{ .Exif.Tags.ImageDescription }}" />
+			<img src="{{ .RelPermalink }}"
+			{{ with .Exif  }}
+				alt="{{ .Tags.ImageDescription }}"
+			{{ end}}
+			/>
 		</div>
-		<p>{{ .Exif.Tags.ImageDescription }}</p>
+		{{ with .Exif }}
+		<p>{{ .Tags.ImageDescription }}</p>
+		{{ end}}
+
 	{{ end }}
 </div>
 {{ end }}

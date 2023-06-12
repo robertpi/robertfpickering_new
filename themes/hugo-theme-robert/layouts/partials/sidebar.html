@@ -26,23 +26,14 @@
       {{ end }}
       <div>
         <p>
-          {{ with .Site.Author.twitter }}
-          <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          {{ with .Site.Author.mastodon }}
+          <a href="{{ . }}"><i class="fa-brands fa-mastodon  fa-2x"></i></a>
           {{ end }}
           {{ with .Site.Author.github }}
           <a href="https://github.com/{{ . }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
           {{ end }}
           {{ with .Site.Author.linkedin }}
           <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-          {{ end }}
-          {{ with .Site.Author.facebook }}
-          <a href="https://www.facebook.com/{{ . }}"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-          {{ end }}
-          {{ with .Site.Author.tumblr }}
-          <a href="https://{{ . }}.tumblr.com/"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
-          {{ end }}
-          {{ with .Site.Author.instagram }}
-          <a href="https://www.instagram.com/{{ . }}"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
           {{ end }}
         </p>
       </div>

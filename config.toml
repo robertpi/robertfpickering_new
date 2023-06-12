@@ -13,6 +13,7 @@ title = "Robert Pickering"
     facebook = "robertfpickering"
     instagram = "robertfpickering"
     email    = "contact@robertfpickering.me"
+    mastodon = "https://functional.cafe/@robertpi"
 
 [params]
     [params.sharebutton]
