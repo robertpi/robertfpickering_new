@@ -22,13 +22,6 @@
       <p>
         <a href="mailto:{{ . }}">{{ . }}</a>
       </p>
-      <p>
-        Projects
-        <ul>
-          <li><a href="https://www.the-canal-project.com">The Canal Project</a></li>
-          <li>Parisians: In Studio / In Situ (website coming soon)</li>
-        </ul>
-      </p>
       {{ end }}
       <div>
         <p>
@@ -45,6 +38,17 @@
       </div>
     </div>
   </div>
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Projects</span>
+    </div>
+    <div id="projects">
+      <ul>
+        <li><a href="https://www.the-canal-project.com">The Canal Project</a></li>
+        <li><a href=".">Parisians: In Studio / In Situ</a> (website coming soon)</li>
+      </ul>
+    </div>
+  </div>
   {{ with .Site.Taxonomies.tags }}
   <div class="sidebar-content">
     <div class="sidebar-header">
@@ -54,7 +58,7 @@
       <ul>
         {{ range $tag, $taxonomy := . }}
         <li>
-          <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}"><span></span>{{ $tag }} ({{ $taxonomy.Count }})</a>
+          <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag }} ({{ $taxonomy.Count }})</a>
         </li>
         {{ end }}
       </ul>

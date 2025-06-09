@@ -3,7 +3,6 @@
  */
 * {
   margin: 0px;
-  padding: 0px;
 }
 
 html, body {
@@ -12,7 +11,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  color:#666;
+  color:#aaa;
   background-color:#000;
 }
 
@@ -22,17 +21,17 @@ img {
 }
 
 a {
-  color:#39c;
+  color:#66c;
   font-weight:400;
   text-decoration:none;
 }
 
 a:hover {
-  color: #4078C0;
+  color: #99f;
 }
 
 h1, h2, h3, h4, h5, h6, .falseheader {
-  color:#666;
+  color:#aaa;
   margin:0 0 20px;
 }
 
@@ -46,10 +45,6 @@ h1, h2, h3, .falseheader {
 
 h1, .falseheader {
   font-size:28px;
-}
-
-li {
-	list-style-type: none;
 }
 
 #wrap {
@@ -98,8 +93,6 @@ li {
 }
 
 .article .posttime {
-  color: #747474;
-  font-size: 12px;
   float: left;
   margin-right: 10px;
   margin-top: 4px;
@@ -107,7 +100,6 @@ li {
 
 .article .content {
   clear: left;
-  color: #777;
   margin-bottom: 10px;
 }
 
@@ -115,14 +107,6 @@ li {
 .article .content ul
 {
   padding-left: 40px;
-}
-
-.article .content a {
-  font-size: 14px;
-}
-
-.article .content a:hover {
-  font-size: 14px;
 }
 
 .article .tags a {
@@ -157,7 +141,6 @@ li {
 }
 
 .sidebar-header span {
-  color: #747474;
   margin-bottom: 4px;
   padding-left: 5px;
 }
@@ -178,16 +161,12 @@ li {
 
 .tags a {
   text-decoration: none;
-  color: #303030;
-  font-size: 14px;
   padding: 2px 3px;
   border: 1px solid #747474;
 }
 
 .tags a:hover {
   background: #F6F7F8;
-  color: #303030;
-  font-size: 14px;
   padding: 2px 3px;
 }
 
@@ -199,31 +178,15 @@ li {
 }
 
 .categories li {
-  list-style: none;
   margin-bottom: 3px;
   white-space: nowrap;
 }
 
-.categories span {
-  display: inline-block;
-  background: #B4B3BA;
-  width: 6px;
-  height: 6px;
-  margin-bottom: 3px;
-  margin-right: 10px;
-}
-
 .categories a {
-  color: #747474;
-  text-decoration: none;
   padding: 5px 20px;
   text-align: center;
 }
 
-.categories a:hover {
-  color: #4078C0;
-  list-style: none;
-}
 
 /**
  * author
@@ -238,25 +201,14 @@ li {
 }
 
 #author a {
-  color: #747474;
   margin-right: 5px;
-  list-style: none;
-}
-
-#author a:hover {
-  color: #4078C0;
 }
 
 /**
  * RSS
  */
 #rss a {
-  color: #747474;
   margin-left: 14px;
-}
-
-#rss a:hover {
-  color: #4078C0;
 }
 
 
@@ -283,16 +235,6 @@ li {
 
 #site-footer span {
   display: inline-block;
-  color: #303030;
-  font-size: 12px;
-}
-
-#site-footer a {
-  color: #303030;
-}
-
-#site-footer a:hover {
-  color: #4078C0;
 }
 
 h1 {
@@ -303,7 +245,6 @@ h1 {
 h2 {
     position: relative;
     padding: 20px 0px 20px 41px;
-    color: #303030;
     font-size: 25px;
     min-height: 40px;
     line-height: 40px;
@@ -332,7 +273,6 @@ h2:after {
 h3 {
     position: relative;
     padding: 10px 0px 10px 30px;
-    color: #303030;
     font-size: 20px;
     min-height: 33px;
     line-height: 33px;
@@ -351,7 +291,6 @@ h3:before {
 h4 {
     position: relative;
     padding: 10px 0px 10px 25px;
-    color: #303030;
     font-size: 16px;
     min-height: 25px;
     line-height: 25px;
@@ -402,7 +341,6 @@ h4:before {
   padding: 20px 25px 10px 45px;
   margin: 5px 17px 20px 0px;
 
-  font-size: 13px;
   font-style: italic;
 }
 
@@ -413,7 +351,6 @@ h4:before {
 
   content: "\201C";
   font-size: 60px;
-  color: #747474;
 }
 
 .article .content blockquote p {
@@ -431,7 +368,6 @@ h4:before {
  */
 #articles-list-header h1 {
   font-size: 25px;
-  color: #303030;
   text-decoration: none;
   padding-left: 20px;
 }
@@ -463,12 +399,7 @@ h4:before {
 }
 
 #article-list h2 a {
-  color: #303030;
   text-decoration: none;
-}
-
-#article-list h2 a:hover {
-  color: #4078C0;
 }
 
 /**
@@ -485,14 +416,11 @@ h4:before {
 
 #pager .pagination li {
   float: left;
-  list-style: none;
 }
 
 #pager .pagination a {
   display: inline-block;
   text-decoration: none;
-  color: #303030;
-  font-size: 14px;
   padding: 10px 8px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -501,8 +429,6 @@ h4:before {
 
 #pager .pagination a:hover {
   background: #F6F7F8;
-  color: #303030;
-  font-size: 14px;
   padding: 10px 8px;
   margin-right: 10px;
 }
@@ -510,13 +436,10 @@ h4:before {
 #pager .pagination .active a {
   padding: 10px 8px;
   background: #747474;
-  color: #F6F7F8;
 }
 
 .adsense .sponsor-label {
   display: block;
-  font-size: 13px;
-  color: #747474;
 }
 
 #share-buttons {
@@ -558,19 +481,9 @@ h4:before {
 
 #pagenavigation-next-prev span {
   display: block;
-  font-size: 13px;
   font-weight: bold;
 }
 
-#pagenavigation-next-prev a {
-  color: #747474;
-  font-size: 14px;
-}
-
-#pagenavigation-next-prev a:hover {
-  color: #4078C0;
-  font-size: 14px;
-}
 
 /**
  * responsive styles
