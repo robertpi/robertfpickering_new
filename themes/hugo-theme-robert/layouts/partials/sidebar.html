@@ -9,37 +9,42 @@
     </div>
   </div>
   {{ end }}
-  {{ if .Site.Author }}
   <div class="sidebar-content">
     <div class="sidebar-header">
       <span>Author</span>
     </div>
     <div id="author">
-      <p>{{ .Site.Author.name }}</p>
+      <p>{{ .Site.Params.author.name }}</p>
       <p>
         <a href="/about/about/">About</a><br />
       </p>
-      {{ with .Site.Author.email }}
+      {{ with .Site.Params.author.email }}
       <p>
         <a href="mailto:{{ . }}">{{ . }}</a>
+      </p>
+      <p>
+        Projects
+        <ul>
+          <li><a href="https://www.the-canal-project.com">The Canal Project</a></li>
+          <li>Parisians: In Studio / In Situ (website coming soon)</li>
+        </ul>
       </p>
       {{ end }}
       <div>
         <p>
-          {{ with .Site.Author.mastodon }}
+          {{ with .Site.Params.Author.mastodon }}
           <a href="{{ . }}"><i class="fa-brands fa-mastodon  fa-2x"></i></a>
           {{ end }}
-          {{ with .Site.Author.github }}
+          {{ with .Site.Params.Author.github }}
           <a href="https://github.com/{{ . }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
           {{ end }}
-          {{ with .Site.Author.linkedin }}
+          {{ with .Site.Params.Author.linkedin }}
           <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
           {{ end }}
         </p>
       </div>
     </div>
   </div>
-  {{ end }}
   {{ with .Site.Taxonomies.tags }}
   <div class="sidebar-content">
     <div class="sidebar-header">

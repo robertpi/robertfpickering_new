@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="{{ "/images/favicon.png" | relURL }}">
 
-    <meta name="apple-mobile-web-app-title" content="{{ .Site.Author.name }}"/>
-    <meta name="application-name" content="{{ .Site.Author.name }}"/>
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.Author.name }}"/>
+    <meta name="application-name" content="{{ .Site.Params.Author.name }}"/>
     <!-- TODO
     <meta name="msapplication-TileImage" content="https://assets.guim.co.uk/images/favicons/f06f6996e193d1ddcd614ea852322d25/windows_tile_144_b.png"/>
     <meta name="apple-itunes-app" content="app-id=409128287, app-argument=https://www.theguardian.com/lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise, affiliate-data=ct=newsmartappbanner&pt=304191">
     -->
-    <link rel="publisher" href="{{ .Site.Author.gplus }}"/>
-    <meta name="author" content="{{ .Site.Author.name }}"/>
-    <meta name="description" content="{{ .Site.Author.name }}"/>
+    <link rel="publisher" href="{{ .Site.Params.Author.gplus }}"/>
+    <meta name="author" content="{{ .Site.Params.Author.name }}"/>
+    <meta name="description" content="{{ .Site.Params.Author.name }}"/>
     {{ if  .Params.image }}
     <meta name="thumbnail" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
     {{ end }}
     <meta name="keywords" content="{{ .Params.tags }}"/>
     <meta name="news_keywords" content="{{ .Params.tags }}"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
-    <meta property="article:author" content="{{ .Site.Author.about }}"/>
+    <meta property="article:author" content="{{ .Site.Params.Author.about }}"/>
     <meta property="og:image:height" content="720"/>
-    <meta property="og:description" content="{{ .Site.Author.name }}"/>
+    <meta property="og:description" content="{{ .Site.Params.Author.name }}"/>
     <meta property="og:image:width" content="1200"/>
     {{ if  .Params.image }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
@@ -30,7 +30,7 @@
     <!-- TODO
     <meta property="al:ios:url" content="gnmguardian://lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise?contenttype=Article&amp;source=applinks"/>
     -->
-    <meta property="article:publisher" content="{{ .Site.Author.facebook }}"/>
+    <meta property="article:publisher" content="{{ .Site.Params.Author.facebook }}"/>
     <meta property="og:type" content="article"/>
     <!--
     <meta property="al:ios:app_store_id" content="409128287"/>
@@ -42,20 +42,20 @@
     <meta property="fb:app_id" content=".Site.Params.sharebutton.facebook"/>
     {{ end }}
     <meta property="article:tag" content="{{ .Params.tags }}"/>
-    <meta property="al:ios:app_name" content="{{ .Site.Author.name }}"/>
-    <meta property="og:site_name" content="{{ .Site.Author.name }}"/>
+    <meta property="al:ios:app_name" content="{{ .Site.Params.Author.name }}"/>
+    <meta property="og:site_name" content="{{ .Site.Params.Author.name }}"/>
     <meta property="article:modified_time" content="{{ .Date.Format "2006/01/02" }}"/>
-    <meta name="twitter:app:name:googleplay" content="{{ .Site.Author.name }}"/>
-    <meta name="twitter:app:name:ipad" content="{{ .Site.Author.name }}"/>
+    <meta name="twitter:app:name:googleplay" content="{{ .Site.Params.Author.name }}"/>
+    <meta name="twitter:app:name:ipad" content="{{ .Site.Params.Author.name }}"/>
     {{ if  .Params.image }}
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
     {{ end }}
-    <meta name="twitter:site" content="@{{ .Site.Author.twitter }}"/>
+    <meta name="twitter:site" content="@{{ .Site.Params.Author.twitter }}"/>
     <!-- TODO
     <meta name="twitter:app:url:ipad" content="gnmguardian://lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise?contenttype=Article&amp;source=twitter"/>
     -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:app:name:iphone" content="{{ .Site.Author.name }}"/>
+    <meta name="twitter:app:name:iphone" content="{{ .Site.Params.Author.name }}"/>
     <!-- TODO
     <meta name="twitter:app:id:iphone" content="409128287"/>
     <meta name="twitter:app:id:ipad" content="409128287"/>
@@ -101,7 +101,7 @@
       {{ template "_internal/google_analytics.html" . }}
       <header class="site-header">
         <div class="image-header">
-          <a href="/"><img alt="" src="/header-new.jpg"></a>
+          <a href="/"><img alt="" src="/camera-header-6585.jpg"></a>
         </div>
       </header>
       <div class="container">

@@ -2,8 +2,11 @@
 Type = "staticpage"
 Title = "About"
 +++
-Robert is an artist interested in technology and peoples interaction with them. He enjoys working the latest modern technology and also toying with analogy equivalents. He is fascinated by the natural world and what makes things work.
 
-He mainly works in photography, but has been known to sketch, act in theatre and film, direct theatre and make short films.
+Robert is Paris based photographer and artist. Currently works in black and white analog photography, but is also an experienced digital photographer.
 
-A summary of his acting work is [available here](/acting/acting).
+He enjoys street and portrait photography. In November 2024 he held his firtst solo exhibition [The Canal Project](https://www.the-canal-project.com).
+He is currently working on a portrait project Parisians: In Studio / In Situ.
+
+While photography is currently his main interest, he has been known to sketch, act in theatre and film, direct theatre and make short films.
+

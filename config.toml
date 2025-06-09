@@ -3,19 +3,20 @@ theme = "hugo-theme-robert"
 languageCode = "en-gb"
 title = "Robert Pickering"
 
-[author]
-    name = "Robert Pickering"
-    homepage = "http://www.robertfpickering.me"
-    about    = "http://www.robertfpickering.me/about"
-    twitter  = "robertpi"
-    linkedin = "robertpickering"
-    github   = "robertpi"
-    facebook = "robertfpickering"
-    instagram = "robertfpickering"
-    email    = "contact@robertfpickering.me"
-    mastodon = "https://functional.cafe/@robertpi"
 
 [params]
+    [params.author]
+        name = "Robert Pickering"
+        homepage = "http://www.robertfpickering.me"
+        about    = "http://www.robertfpickering.me/about"
+        twitter  = "robertpi"
+        linkedin = "robertpickering"
+        github   = "robertpi"
+        facebook = "robertfpickering"
+        instagram = "robertfpickering"
+        email    = "contact@robertfpickering.me"
+        mastodon = "https://functional.cafe/@robertpi"
+
     [params.sharebutton]
         # If you want to display share buttons set these
         # This is Optional values
