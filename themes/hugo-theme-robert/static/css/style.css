@@ -78,10 +78,16 @@ h1, .falseheader {
   width: 70%;
 }
 
+.section-header {
+  padding: 0px 0px 0px 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+
 /**
  * articles
  */
-.article {
+ .article {
   width: 700px;
   padding: 0px 20px 20px 20px;
   clear: left;

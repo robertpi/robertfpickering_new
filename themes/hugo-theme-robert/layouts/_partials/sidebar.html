@@ -15,9 +15,6 @@
     </div>
     <div id="author">
       <p>{{ .Site.Params.author.name }}</p>
-      <p>
-        <a href="/about/about/">About</a><br />
-      </p>
       {{ with .Site.Params.author.email }}
       <p>
         <a href="mailto:{{ . }}">{{ . }}</a>
