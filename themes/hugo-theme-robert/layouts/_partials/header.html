@@ -7,10 +7,6 @@
 
     <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.Author.name }}"/>
     <meta name="application-name" content="{{ .Site.Params.Author.name }}"/>
-    <!-- TODO
-    <meta name="msapplication-TileImage" content="https://assets.guim.co.uk/images/favicons/f06f6996e193d1ddcd614ea852322d25/windows_tile_144_b.png"/>
-    <meta name="apple-itunes-app" content="app-id=409128287, app-argument=https://www.theguardian.com/lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise, affiliate-data=ct=newsmartappbanner&pt=304191">
-    -->
     <link rel="publisher" href="{{ .Site.Params.Author.gplus }}"/>
     <meta name="author" content="{{ .Site.Params.Author.name }}"/>
     <meta name="description" content="{{ .Site.Params.Author.name }}"/>
@@ -27,14 +23,8 @@
     {{ if  .Params.image }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
     {{ end }}
-    <!-- TODO
-    <meta property="al:ios:url" content="gnmguardian://lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise?contenttype=Article&amp;source=applinks"/>
-    -->
     <meta property="article:publisher" content="{{ .Site.Params.Author.facebook }}"/>
     <meta property="og:type" content="article"/>
-    <!--
-    <meta property="al:ios:app_store_id" content="409128287"/>
-    -->
     <meta property="article:section" content="Art"/>
     <meta property="article:published_time" content="{{ .Date.Format "2006/01/02" }}"/>
     <meta property="og:title" content="{{ .Title }}"/>
@@ -51,54 +41,18 @@
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
     {{ end }}
     <meta name="twitter:site" content="@{{ .Site.Params.Author.twitter }}"/>
-    <!-- TODO
-    <meta name="twitter:app:url:ipad" content="gnmguardian://lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise?contenttype=Article&amp;source=twitter"/>
-    -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:app:name:iphone" content="{{ .Site.Params.Author.name }}"/>
-    <!-- TODO
-    <meta name="twitter:app:id:iphone" content="409128287"/>
-    <meta name="twitter:app:id:ipad" content="409128287"/>
-    <meta name="twitter:app:id:googleplay" content="com.guardian"/>
-    <meta name="twitter:app:url:googleplay" content="guardian://www.theguardian.com/lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise"/>
-    <meta name="twitter:app:url:iphone" content="gnmguardian://lifeandstyle/2017/sep/17/yoga-better-person-lifestyle-exercise?contenttype=Article&amp;source=twitter"/>
-    -->
     <meta name="twitter:dnt" content="on">
 
     <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/bb7ca4e565.js" crossorigin="anonymous"></script>
-    <!-- syntax highlight -->
-    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
-    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    {{ if .Site.Params.mathjax }}
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        displayMath: [['$$','$$'], ['\[','\]']],
-        processEscapes: true,
-        processEnvironments: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-        TeX: { equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"] }
-      }
-    });
-    </script>
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    {{ end }}
     <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relURL }}">
-  <!--
- 	<link href="/image-gallery/css/SimpleSlider.css" rel="stylesheet" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/image-gallery/js/Am2_SimpleSlider.js" type="text/javascript"></script>
-  -->
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   </head>
   <body>
     <div id="wrap">
-      {{ template "_internal/google_analytics.html" . }}
       <header class="site-header">
         <div class="image-header">
           <a href="/"><img alt="A collection of 14 images from The Canal Project series" src="/header.jpg"></a>
